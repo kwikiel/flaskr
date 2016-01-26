@@ -1,0 +1,8 @@
+{
+  "name": "Flask Tasker App",
+  "description": "Final step for flask tutorial",
+  "repository": "https://github.com/kwikiel/flaskr",
+  "logo": "http://flask.pocoo.org/docs/0.10/_static/flask.png",
+  "keywords": ["python", "blog", "flask"]
+}
+
