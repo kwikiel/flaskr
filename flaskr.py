@@ -2,9 +2,9 @@ import sqlite3
 from flask import Flask, g, render_template
 from flask import session, redirect, abort, flash, url_for, request
 from contextlib import closing
+import os
 
-
-DATABASE = '/tmp/flaskr.db'
+DATABASE = 'test.db'
 DEBUG = True
 SECRET_KEY = 'xD'
 USERNAME = 'admin'
@@ -78,4 +78,6 @@ def logout():
 
 
 if __name__ == '__main__':
-        app.run()
+        app.run(host='0.0.0.0',
+                port=int(os.getenv("PORT", default=5000)),
+                debug=True)
