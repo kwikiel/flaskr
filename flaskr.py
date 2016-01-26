@@ -6,7 +6,7 @@ import os
 
 DATABASE = 'test.db'
 DEBUG = True
-SECRET_KEY = 'xD'
+SECRET_KEY = os.urandom(64)
 USERNAME = 'admin'
 PASSWORD = 'admin'
 
