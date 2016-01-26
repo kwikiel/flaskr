@@ -1,1 +1,1 @@
-python flaskr.py
+web: python flaskr.py
